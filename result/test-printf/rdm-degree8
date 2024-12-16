@@ -7,7 +7,7 @@ of SimpleScalar, LLC (info@simplescalar.com).
 
 sim: command line: ./simplesim-3.0/sim-cache -config config/rdm-degree8 -redir:sim result/test-printf/rdm-degree8 ./benchmark/bin.little/test-printf 
 
-sim: simulation started @ Mon Nov 25 00:36:18 2024, options follow:
+sim: simulation started @ Mon Dec 16 12:20:38 2024, options follow:
 
 sim-cache: This simulator implements a functional cache simulator.  Cache
 statistics are generated for a user-selected cache and TLB configuration,
@@ -28,7 +28,7 @@ information is generated.
 # -redir:prog          <null> # redirect simulated program output to file
 -nice                       0 # simulator scheduling priority
 -max:inst                   0 # maximum number of inst's to execute
--cache:dl1       dl1:256:32:8:r # l1 data cache config, i.e., {<config>|none}
+-cache:dl1        dl1:1:8:8:r # l1 data cache config, i.e., {<config>|none}
 -cache:dl2       ul2:1024:64:4:l # l2 data cache config, i.e., {<config>|none}
 -cache:il1       il1:256:32:1:l # l1 inst cache config, i.e., {<config>|dl1|dl2|none}
 -cache:il2                dl2 # l2 instruction cache config, i.e., {<config>|dl2|none}
@@ -83,22 +83,22 @@ il1.repl_rate                0.0619 # replacement rate (i.e., repls/ref)
 il1.wb_rate                  0.0000 # writeback rate (i.e., wrbks/ref)
 il1.inv_rate                 0.0000 # invalidation rate (i.e., invs/ref)
 dl1.accesses                 531440 # total number of accesses
-dl1.hits                     530876 # total number of hits
-dl1.misses                      564 # total number of misses
-dl1.replacements                 59 # total number of replacements
-dl1.writebacks                   57 # total number of writebacks
+dl1.hits                     325542 # total number of hits
+dl1.misses                   205898 # total number of misses
+dl1.replacements             205890 # total number of replacements
+dl1.writebacks                94863 # total number of writebacks
 dl1.invalidations                 0 # total number of invalidations
-dl1.miss_rate                0.0011 # miss rate (i.e., misses/ref)
-dl1.repl_rate                0.0001 # replacement rate (i.e., repls/ref)
-dl1.wb_rate                  0.0001 # writeback rate (i.e., wrbks/ref)
+dl1.miss_rate                0.3874 # miss rate (i.e., misses/ref)
+dl1.repl_rate                0.3874 # replacement rate (i.e., repls/ref)
+dl1.wb_rate                  0.1785 # writeback rate (i.e., wrbks/ref)
 dl1.inv_rate                 0.0000 # invalidation rate (i.e., invs/ref)
-ul2.accesses                 113110 # total number of accesses
-ul2.hits                     111986 # total number of hits
-ul2.misses                     1124 # total number of misses
+ul2.accesses                 413250 # total number of accesses
+ul2.hits                     412125 # total number of hits
+ul2.misses                     1125 # total number of misses
 ul2.replacements                  0 # total number of replacements
 ul2.writebacks                    0 # total number of writebacks
 ul2.invalidations                 0 # total number of invalidations
-ul2.miss_rate                0.0099 # miss rate (i.e., misses/ref)
+ul2.miss_rate                0.0027 # miss rate (i.e., misses/ref)
 ul2.repl_rate                0.0000 # replacement rate (i.e., repls/ref)
 ul2.wb_rate                  0.0000 # writeback rate (i.e., wrbks/ref)
 ul2.inv_rate                 0.0000 # invalidation rate (i.e., invs/ref)
@@ -131,9 +131,9 @@ ld_stack_size                 16384 # program initial stack size
 ld_prog_entry            0x00400140 # program entry point (initial PC)
 ld_environ_base          0x7fff8000 # program environment base address address
 ld_target_big_endian              0 # target executable endian-ness, non-zero if big endian
-mem.page_count                   30 # total number of pages allocated
-mem.page_mem                   120k # total size of memory pages allocated
-mem.ptab_misses                  33 # total first level page table misses
-mem.ptab_accesses           8789389 # total page table accesses
+mem.page_count                   29 # total number of pages allocated
+mem.page_mem                   116k # total size of memory pages allocated
+mem.ptab_misses                  32 # total first level page table misses
+mem.ptab_accesses           8788605 # total page table accesses
 mem.ptab_miss_rate           0.0000 # first level page table miss rate
 

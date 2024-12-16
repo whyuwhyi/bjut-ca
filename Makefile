@@ -1,6 +1,6 @@
 EXEC = ./simplesim-3.0/sim-cache
 
-TEST_NAME = test-llong
+TEST_NAME = test-printf
 DIR = ./benchmark/bin.little/
 
 CONFIG_PATH = ./config/

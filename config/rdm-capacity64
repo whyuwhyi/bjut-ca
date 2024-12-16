@@ -26,7 +26,7 @@
 # -chkpt                     <null> 
 
 # redirect simulator output to file (non-interactive only)
--redir:sim                  ../result/test-printf/results/rdm/capacity64.out
+# -redir:sim                  ../result/test-printf/results/rdm/capacity64.out
 
 # redirect simulated program output to file
 # -redir:prog                <null> 
@@ -38,7 +38,7 @@
 -max:inst                         0 
 
 # l1 data cache config, i.e., {<config>|none}
--cache:dl1             dl1:16384:32:1:r 
+-cache:dl1             dl1:64:32:1:r 
 
 # l2 data cache config, i.e., {<config>|none}
 -cache:dl2             ul2:1024:64:4:l 
